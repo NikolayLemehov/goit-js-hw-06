@@ -1,5 +1,3 @@
-"use strict";
-
 const categoriesListRef = document.querySelector('ul#categories');
 const categoryItems = categoriesListRef?.querySelectorAll('li.item');
 console.log(`Number of categories: ${categoryItems.length}`);
