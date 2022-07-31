@@ -7,7 +7,7 @@ const CssClass = {
 refInput.addEventListener('blur', handleBlurInput)
 
 function handleBlurInput({target: {value}}) {
-  if (value.length === +refInput.dataset.length) {
+  if (value.length === Number(refInput.dataset.length)) {
     refInput.classList.add(CssClass.VALID);
     if (refInput.classList.contains(CssClass.INVALID)) refInput.classList.remove(CssClass.INVALID);
     return;

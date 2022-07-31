@@ -16,7 +16,7 @@ ref.destroyBtn.addEventListener('click', handleClickDestroy);
 
 function handleClickCreate() {
   clearBoxes();
-  createBoxes(+ref.input.value)
+  createBoxes(Number(ref.input.value))
 }
 
 function handleClickDestroy() {
