@@ -22,3 +22,32 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* task-03 */
+
+.gallery {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.task03-item {
+  display: flex;
+  width: 375px;
+  padding: 20px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #8f8f8f;
+}
+
+.task03-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: rgba(248, 238, 238, 0.63);
+  object-fit: contain;
+  object-position: center;
+}
