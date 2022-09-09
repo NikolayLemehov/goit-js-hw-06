@@ -16,7 +16,7 @@ const images = [
 const galleryRef = document.querySelector('ul.gallery');
 
 const getLiMarkup = ({url, alt}) => `<li class="task03-item"><img class="task03-img" src="${url}" alt="${alt}"/></li>`
-const getLiListMarkup = (imagesList) => imagesList.map(it => getLiMarkup(it)).join('')
+const getListMarkup = (imagesList) => imagesList.map(it => getLiMarkup(it)).join('')
 
-galleryRef.insertAdjacentHTML('afterbegin', getLiListMarkup(images));
+galleryRef.insertAdjacentHTML('afterbegin', getListMarkup(images));
 
